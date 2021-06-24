@@ -11,27 +11,27 @@ public class Main {
         int s = in.nextInt();
         System.out.println(s);
 
-        int l=1;
+        int z=1;
         int v = s;
         while(s>=1){
+            int stz=0;
+            int p = s;
 
-            int stl=0;
-            int stc=v;
-
-            /*if(stl<=v){
-                if(stl%2!=0){
+            while(p>1){
+                System.out.print(" ");
+                p--;
+            }
+            while(stz!=z){
+                if(z%2!=0){
+                    System.out.print("*");
 
                 }
-
-            }*/
-            while(stl!=l){
-                System.out.print("*");
-                stl++;
+                stz++;
             }
             System.out.println();
 
             s--;
-            l++;
+            z++;
         }
     }
 }
