@@ -11,6 +11,27 @@ public class Main {
         int s = in.nextInt();
         System.out.println(s);
 
+        int l=1;
+        int v = s;
+        while(s>=1){
 
+            int stl=0;
+            int stc=v;
+
+            /*if(stl<=v){
+                if(stl%2!=0){
+
+                }
+
+            }*/
+            while(stl!=l){
+                System.out.print("*");
+                stl++;
+            }
+            System.out.println();
+
+            s--;
+            l++;
+        }
     }
 }
