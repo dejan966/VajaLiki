@@ -17,14 +17,15 @@ public class Main {
             int stz=0;
             int p = s;
 
-            while(p>1){
-                System.out.print(" ");
-                p--;
-            }
+
             while(stz!=z){
                 if(z%2!=0){
+                    while(p>1){
+                        int g = p%2;
+                        System.out.print(" ");
+                        p--;
+                    }
                     System.out.print("*");
-
                 }
                 stz++;
             }
