@@ -12,13 +12,13 @@ public class Main {
 
         int z=1;
         int v = s;
-        while(s!=0){
+        while(s>=1){
             int stz=0;
             int g = v-z;
             int u = g/2;
             if(g!=0){
                 while(u!=0){
-                    System.out.print( " ");
+                    System.out.print(" ");
                     u--;
                 }
             }
@@ -32,6 +32,27 @@ public class Main {
 
             s--;
             z++;
+        }
+        while(z!=0){
+            int stz=0;
+            int g = v-s;
+            int u = g/2;
+            if(g!=0){
+                while(u!=0){
+                    System.out.print(" ");
+                    u--;
+                }
+            }
+            while(stz!=s){
+                if(s%2!=0){
+                    System.out.print("*");
+                }
+                stz++;
+            }
+            System.out.println();
+
+            s++;
+            z--;
         }
     }
 }
