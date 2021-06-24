@@ -16,15 +16,21 @@ public class Main {
         while(s>=1){
             int stz=0;
             int p = s;
-
+            if(v-z!=0)
+                System.out.print( " ");
 
             while(stz!=z){
                 if(z%2!=0){
-                    while(p>1){
-                        int g = p%2;
-                        System.out.print(" ");
+                    int g = p/2;
+
+                    /*while(p>1){
+
+                        if(g==p/2){
+
+
+                        }
                         p--;
-                    }
+                    }*/
                     System.out.print("*");
                 }
                 stz++;
