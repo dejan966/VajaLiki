@@ -3,7 +3,6 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -13,24 +12,18 @@ public class Main {
 
         int z=1;
         int v = s;
-        while(s>=1){
+        while(s!=0){
             int stz=0;
-            int p = s;
-            if(v-z!=0)
-                System.out.print( " ");
-
+            int g = v-z;
+            int u = g/2;
+            if(g!=0){
+                while(u!=0){
+                    System.out.print( " ");
+                    u--;
+                }
+            }
             while(stz!=z){
                 if(z%2!=0){
-                    int g = p/2;
-
-                    /*while(p>1){
-
-                        if(g==p/2){
-
-
-                        }
-                        p--;
-                    }*/
                     System.out.print("*");
                 }
                 stz++;
