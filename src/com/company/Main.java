@@ -22,15 +22,19 @@ public class Main {
             int p = Stv-1;
             int Stp=1;
 
-            //nek if-else da sproti preverja stanje zvezdic pa presledkov
+
             while(Stp<Stv){
                 System.out.print(" ");
                 Stp++;
             }
 
-            //brez while je to sam leva stran zvezdic
+
             if(Stp<=Sts)
                 System.out.print("*");
+
+            //Sts-v (kok stolpcev je se ostalo do konca)
+
+
 
 
 
