@@ -35,44 +35,7 @@ public class Main {
 
 
             System.out.println();
-            /*if(p>=0){
-                System.out.print(" ");
-                Sts++;
-                p--;
-                if(Sts==4)
-                    System.out.println();
-            }
-            if(Stz<=Stv){
-                System.out.print("*");
-                Sts++;
-                Stz++;
-                if(Sts==4)
-                    System.out.println();
-            }*/
 
-
-            /*if(s%2!=0){
-                while(p!=0){
-                    System.out.print(" ");
-                    p--;
-                }
-                if(Stv==1){
-                    Stv++;
-                    System.out.print("*");
-                }
-                else{
-                    //nared da izpiše a koncu še eno zvezdico pa pol še da izpiše še desno stran
-                    while(Stz!=Stv){
-                        System.out.print("*");
-                        Stz++;
-                    }
-                }
-                System.out.println();
-            }*/
-
-
-            //Stv+=2;
-            //v--;
             Stv--;
             Sts++;
         }
