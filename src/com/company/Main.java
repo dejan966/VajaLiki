@@ -11,22 +11,37 @@ public class Main {
         int sirina = in.nextInt();
         System.out.println(sirina);
 
+        int s = 0;
         int Stv=1;
-        int Stz=Stv-1;
-        while(Stv<=sirina){
-            int Sts=0;
-            int g = sirina- Stv;
+        int Stz=0;
+        while(s<=sirina){
+            int Sts=1;
+            int g = sirina- s;
             int p = g/2+1;
-            while(p!=0){
-                System.out.print(" ");
-                p--;
+            //če ni s deljiv z 2 nardi presledek pa zvezdico
+            if(s%2!=0){
+                while(p!=0){
+                    System.out.print(" ");
+                    p--;
+                }
+                if(Stv==1){
+                    Stv++;
+                    System.out.print("*");
+                }
+                else{
+                    //nared da bo sam ena razlika med sts pa stv
+                    while(Sts!=Stv){
+                        System.out.print("*");
+                        Sts++;
+                    }
+                }
+                System.out.println();
             }
-            while(Sts!=Stv){
-                System.out.print("*");
-                Sts++;
-            }
-            Stv+=2;
-            System.out.println();
+
+
+            //Stv+=2;
+            s++;
+
         }
     }
 }
