@@ -30,7 +30,7 @@ public class Main {
                 Stp++;
             }
 
-            if(Stp<=Sts)
+            if(Stp<=v) //ali Stp<=Sts
                 System.out.print("*");
 
             /*while(OP>0){
@@ -41,18 +41,15 @@ public class Main {
             if(OP<=0)
                 System.out.print("*");*/
 
-            //dokler st%2==0 dela presledke
-            if(st%2!=0){
-                while(OP!=st){
-                    System.out.print(" ");
-                    OP++;
+            if(Stp!=v){
+                if(st%2!=0){
+                    while(OP!=st){
+                        System.out.print(" ");
+                        OP++;
+                    }
                 }
-
+                System.out.print("*");
             }
-
-
-            System.out.print("*");
-
 
             /*while(Stz<Sts){
                 System.out.print("*");
